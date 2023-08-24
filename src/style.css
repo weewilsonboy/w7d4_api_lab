@@ -1,0 +1,46 @@
+* {
+    background-color: rgb(241, 253, 255);
+}
+
+
+
+select {
+    background-color: blueviolet;
+    color: chartreuse
+}
+
+option {
+    background-color: blueviolet;
+}
+
+button {
+    background-color: pink;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+label {
+    color: rgb(141, 40, 167);
+}
+
+#favUl {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#fav {
+    margin: 1%;
+    border: 5px solid rgb(248, 187, 18);
+    padding: 1%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 46, 70);
+    color: gold;
+}
