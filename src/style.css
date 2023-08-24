@@ -2,6 +2,11 @@
     background-color: rgb(241, 253, 255);
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-content: start;
+}
 
 
 select {
@@ -28,7 +33,7 @@ label {
 
 #favUl {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -43,4 +48,24 @@ label {
     justify-content: center;
     background-color: rgb(19, 46, 70);
     color: gold;
+}
+
+.languageDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.languageLabel {
+    margin: 1% 100% 1% 100%;
+}
+
+#languages {
+    width: 50%;
+    margin: 2%;
+}
+
+.formattedLanguage {
+    margin: 5%;
 }

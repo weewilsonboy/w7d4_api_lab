@@ -5,14 +5,17 @@ const CountryInfo = ({countries, givenCountry, setFavouriteList, favouriteList})
     const givenName = givenCountry.name.common
     const givenLanguages = Object.keys(givenCountry.languages)
     
-    const formattedLanguages = givenLanguages.map((language,index)=><li key={index}>{language}</li>)
+    const formattedLanguages = givenLanguages.map((language,index)=><><li key={index} className="formattedLanguage">{language}</li><br/></>)
     
     return (
         <>
-            <h1>{givenName} <img src={givenCountry.flags.png}/></h1>
-            <label htmlFor="languages">Languages</label>
+            <h1>{givenName}</h1>
+            <img src={givenCountry.flags.png}/>
+            <div className="languageDiv">
+            <label htmlFor="languages" className="languageLabel">Languages</label>
+            <br/>
             <ul name="languages" id="languages">{formattedLanguages}
-            </ul>
+            </ul></div>
             <Neighbours countries={countries} givenCountry={givenCountry}/>
             <FavouriteButton givenCountry={givenCountry} setFavouriteList={setFavouriteList} favouriteList={favouriteList}/>
         </>
